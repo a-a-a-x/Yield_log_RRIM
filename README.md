@@ -6,10 +6,10 @@ The raw datasets of USPTO500MT and Buchwald-Hartwig are provided in the folder '
 The sample code of this step is provided in the file [`USPTO_data_process.ipynb`](./Data/USPTO/USPTO_data_process.ipynb). And the filtered datasets are also provided, Buchwald-Hartwig: [`BH_processed.csv`](./Data/BH/BH_processed.csv), USPTO500MT: [`USPTO500MT_train_processed_100.csv`](./Data/USPTO/USPTO500MT_train_processed_100.csv), [`USPTO500MT_valid_processed_100.csv`](./Data/USPTO/USPTO500MT_valid_processed_100.csv), [`USPTO500MT_test_processed_100.csv`](./Data/USPTO/USPTO500MT_test_processed_100.csv), sampled_CJHIF: [`sample_test_CJ_processed_final_5w_wo0.csv`](./Data/sample_CJHIF/sample_test_CJ_processed_final_5w_wo0.csv). 
 
 ## Feature Generation
-This step generates the reactant, reagent, and product features needed for log-RRIM. The sample code is [`USPTO_features_process.ipynb`](USPTO_features_process.ipynb). Each dataset's generated reactant, reagent, and product features are also provided in the folder Data.
+This step generates the reactant, reagent, and product features needed for log-RRIM. The sample code is [`USPTO_features_process.ipynb`](./Data/USPTO/USPTO_features_process.ipynb). Each dataset's generated reactant, reagent, and product features are also provided in the folder [`Data`](./Data).
 
 ## Training and testing
-In scripts, [`test_BH.pbs`](test_BH.pbs) and [`test_USPTO.pbs`](test_USPTO.pbs) contain the commands to train and test the log-RRIM on different datasets use the basic atom features or the learned atom features, which is controlled by parameter '--use_pretrain 0'. 
+In the folder ['Scripts'](./scripts), [`test_BH.pbs`](./scripts/test_BH.pbs) and [`test_USPTO.pbs`](./scripts/test_USPTO.pbs) contain the commands to train and test the log-RRIM on different datasets use the basic atom features or the learned atom features, which is controlled by parameter '--use_pretrain 0'. 
 
 ## Evaluation and Analysis
 The comparison and the analyses between log-RRIM and T5chem can be found in the folder [`results_analysis`](results_analysis).
