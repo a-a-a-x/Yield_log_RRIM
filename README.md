@@ -12,7 +12,7 @@ This step generates the reactant, reagent, and product features needed for log-R
 In the folder ['Script'](./script), [`test_BH.pbs`](./script/test_BH.pbs) and [`test_USPTO.pbs`](./script/test_USPTO.pbs) contain the commands to train and test the log-RRIM on different datasets use the basic atom features or the learned atom features, which is controlled by parameter '--use_pretrain 0'. 
 
 ## Evaluation and Analysis
-The comparison and the analyses between log-RRIM and T5chem can be found in the folder [`results_analysis`](results_analysis).
+The comparison and the analyses between log-RRIM and T5chem can be found in the folder [`result_analysis`](./result_analysis).
 
 ## Package requirements
 Important python packages and their versions in our station are listed below: <br>
