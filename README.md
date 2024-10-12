@@ -3,7 +3,7 @@ This is a repository for the paper "log-RRIM: Yield Prediction via Local-to-glob
 
 ## Data processing
 The raw datasets of USPTO500MT and Buchwald-Hartwig are provided in the folder 'Data'. The Data processing step filters out reactions without identifiable reaction centers. 
-The sample code of this step is provided in the file [`USPTO_data_process.ipynb`](./Data/USPTO/USPTO_data_process.ipynb). And the filtered datasets are also provided, Buchwald-Hartwig: [`BH_processed.csv`](BH_processed.csv), USPTO500MT: [`USPTO500MT_train_processed_100.csv`](USPTO500MT_train_processed_100.csv), [`USPTO500MT_valid_processed_100.csv`](USPTO500MT_valid_processed_100.csv), [`USPTO500MT_test_processed_100.csv`](USPTO500MT_test_processed_100.csv), sampled_CJHIF: [`sample_test_CJ_processed_final_5w_wo0.csv`](sample_test_CJ_processed_final_5w_wo0.csv). 
+The sample code of this step is provided in the file [`USPTO_data_process.ipynb`](./Data/USPTO/USPTO_data_process.ipynb). And the filtered datasets are also provided, Buchwald-Hartwig: [`BH_processed.csv`](./Data/BH/BH_processed.csv), USPTO500MT: [`USPTO500MT_train_processed_100.csv`](./Data/USPTO/USPTO500MT_train_processed_100.csv), [`USPTO500MT_valid_processed_100.csv`](./Data/USPTO/USPTO500MT_valid_processed_100.csv), [`USPTO500MT_test_processed_100.csv`](./Data/USPTO/USPTO500MT_test_processed_100.csv), sampled_CJHIF: [`sample_test_CJ_processed_final_5w_wo0.csv`](./Data/USPTO/sample_test_CJ_processed_final_5w_wo0.csv). 
 
 ## Feature Generation
 This step generates the reactant, reagent, and product features needed for log-RRIM. The sample code is [`USPTO_features_process.ipynb`](USPTO_features_process.ipynb). Each dataset's generated reactant, reagent, and product features are also provided in the folder Data.
